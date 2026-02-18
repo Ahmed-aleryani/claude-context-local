@@ -5,7 +5,7 @@ set -euo pipefail
 # Usage:
 #   curl -fsSL https://raw.githubusercontent.com/FarhanAliRaza/claude-context-local/main/scripts/install.sh | bash
 
-REPO_URL="https://github.com/FarhanAliRaza/claude-context-local"
+REPO_URL="https://github.com/Ahmed-aleryani/claude-context-local"
 PROJECT_DIR="${HOME}/.local/share/claude-context-local"
 STORAGE_DIR="${HOME}/.claude_code_search"
 MODEL_NAME="google/embeddinggemma-300m"
