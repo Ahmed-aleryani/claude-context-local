@@ -7,14 +7,14 @@ sys.path.insert(0, str(Path(__file__).parent.parent))
 
 import logging
 
-# Configure logging
+# Configure logging — WARNING level for stdio to avoid noisy stderr
 logging.basicConfig(
-    level=logging.DEBUG,
+    level=logging.WARNING,
     format='%(asctime)s - %(name)s - %(levelname)s - %(message)s'
 )
 logger = logging.getLogger(__name__)
-logging.getLogger("mcp").setLevel(logging.DEBUG)
-logging.getLogger("fastmcp").setLevel(logging.DEBUG)
+logging.getLogger("mcp").setLevel(logging.WARNING)
+logging.getLogger("fastmcp").setLevel(logging.WARNING)
 
 from mcp_server.code_search_server import CodeSearchServer
 from mcp_server.code_search_mcp import CodeSearchMCP
